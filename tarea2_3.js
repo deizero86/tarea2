@@ -1,23 +1,26 @@
+let a = 200;
+let b = 100;
+let c = 200
+
 function setup() {
-  createCanvas(200, 200);
+  createCanvas(400, 400);
   }
 
-function mouseReleased(){
-loop();
-}
-
 function draw() {
-  if (mouseIsPressed) {
+
+  if (b < 0){
     noLoop();
-   }
+  }
+  
+  a = a-1;
+  b = b-.5;
+  c = c-.5;
+  
   background(220);
   fill (192, 192, 192)
-  square(0, 0, 200);
-  a = random(0, 200);
-  b = random(0, 200);
-  
+  rect(100, 100, a, a);
   fill (255, 255, 255);
-  circle(a, b, 40);
+  arc(c, c, b, b, 0, PI+PI);
 
 }
 
