@@ -1,4 +1,3 @@
-let a = 200;
 let b = 400;
 let c = 0;
 
@@ -12,7 +11,6 @@ function draw(){
   background(0);
   
   stroke(255);
-  a = a+.5;
   b = b-.5;
   c = c+.5;
   
