@@ -1,18 +1,28 @@
+let a = 200;
+let b = 400;
+let c = 0;
+
+
 function setup() {
 
-  createCanvas(720, 500);
-  background(0);
   }
 
 function draw(){
-  if (mouseIsPressed) {
-    stroke(255);
-  } else {
-    stroke(237, 34, 93);
-  }
-  line(mouseX-40, mouseY, mouseX-40, mouseY+100);
-  line(mouseX-40, mouseY+100, mouseX+60, mouseY+200);
-  line(mouseX-40, mouseY+100, mouseX-145, mouseY+200);
+  createCanvas(400, 400);
+  background(0);
   
-
+  stroke(255);
+  a = a+.5;
+  b = b-.5;
+  c = c+.5;
+  
+  
+  line(200, c, 200, 200);
+  line(c, b, 200, 200);
+  line(b, b, 200, 200);
+  
+  if (b < 200){
+    noLoop()
+  }
+  
 }
