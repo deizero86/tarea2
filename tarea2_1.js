@@ -16,6 +16,6 @@ function draw() {
   circle(b, a, 40);
   circle(a, b, 40);
   circle(b, b, 40);
-  if(a == 100){
+  if(a == b){
     noLoop() }
 }
