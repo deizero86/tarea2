@@ -6,8 +6,8 @@ function setup() {
   }
 
 function draw() {
-  a = a+1;
-  b = b-1;
+  a = a+.5;
+  b = b-.5;
   background(220);
   fill (255, 255, 255)
   square(0, 0, 200);
